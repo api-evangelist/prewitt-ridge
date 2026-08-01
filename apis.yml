@@ -1,7 +1,28 @@
 aid: prewitt-ridge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/prewitt-ridge.png
 name: Prewitt Ridge
-description: Prewitt Ridge is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Prewitt Ridge builds SysGit, "the collaboration layer for complex hardware" —
+  an enterprise platform that applies software development practices to systems
+  engineering. SysGit provides Git-based version control for requirements and
+  system models, Model-Based Systems Engineering (MBSE) workflows, AI-assisted
+  systems engineering automation, and SysMLv2 compliance for open-standards
+  adherence. The platform targets defense and aerospace teams, with customers
+  including the US Air Force, GTRI, Leidos, and Anduril. Prewitt Ridge is a
+  Techstars-backed company added to the API Evangelist network. As of this
+  enrichment pass the company publishes no public API, SDK, developer
+  documentation, or .well-known documents.
 url: https://raw.githubusercontent.com/api-evangelist/prewitt-ridge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Systems Engineering
+- MBSE
+- SysMLv2
+- Hardware
+- Requirements Management
+- Defense
+- Aerospace
+- Version Control
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/prewitt-ridge-domain-security.yml
+- type: WellKnown
+  url: well-known/prewitt-ridge-well-known.yml
 - type: Website
   url: https://sysgit.io/
+- type: Blog
+  url: https://resources.sysgit.io/
+- type: Support
+  url: https://sysgit.io/contact
+- type: SignUp
+  url: https://sysgit.io/request-a-demo
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
